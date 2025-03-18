@@ -1,0 +1,225 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+}
+#grid-container
+{
+    display: grid;
+    grid-template-areas: 
+    "main main main main"
+    "about about about about"
+    "logo logo logo logo"
+    "heading heading heading heading"
+    "service service service service"
+    "step step step step"
+    "promo promo promo promo"
+    "book book book book"
+    "testimony testimony testimony testimony"
+    "join join join join"
+    "footer footer footer footer";
+}
+.main
+{
+    grid-area: main;
+}
+header{
+    background-color: rgb(66, 70, 75);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;    
+}
+header > p
+{
+    display:inline-flex;
+    color:white;
+}
+header a
+{
+    color:white;
+    padding-left: 5px;
+}
+.address
+{
+    padding: 30px;
+}
+.address > p
+{
+    display:inline-flex;
+}
+.address #email-address
+{
+    float:left;
+    margin-left: 100px;
+}
+.address #phone
+{
+    float:right;
+    margin-right: 100px;
+}
+.address > p > i
+{
+    color: #070650;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.navigation
+{
+    text-align: center;
+}
+.navigation > ul
+{
+    list-style-type: none;
+    display: inline-flex;
+    padding: 50px;
+}
+.navigation a
+{
+    text-decoration: none;
+    margin: 50px;
+    color: rgb(100, 97, 97);
+    font-weight: bolder;
+}
+.navigation #home
+{
+    color:#f8c306;
+}
+.moving
+{
+    background-image:url('https://res.cloudinary.com/growing-fathers/image/upload/w_1300,h_684,q_auto,f_auto,c_lfill/v1/blog/leading-your-family-through-a-move?_a=BAMCkGeA0');
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 600px;
+    color:white;
+    text-align: center;
+    padding:200px;
+}
+.moving h1
+{
+    font-size: 100px;
+    font-weight: bolder;
+}
+.moving > button
+{
+    padding: 20px 40px ;
+    background-color: #f8c306;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.about 
+{
+    grid-area: about;
+    display: grid;
+    grid-template-columns: auto auto ;
+}
+.about .section
+{
+    display:grid;
+    grid-template-columns: auto auto;
+}
+.logo
+{ 
+    grid-area: logo;
+    display:flex;
+}
+.about h1
+{
+    font-size: 60px;
+}
+.about a
+{
+    color: #d4a703;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.heading
+{
+    grid-area:heading;
+    text-align: center;
+}
+.service
+{
+    grid-area: service;
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    margin: auto;
+    width: 60%;
+}
+.service i
+{
+    font-size: 100px;
+}
+.step
+{
+    grid-area: step;
+    text-align: center;
+}
+
+.promo
+{
+    grid-area: promo;
+    display: grid;
+    grid-template-columns: auto auto;
+    height:600px;
+}
+.promo .image-container
+{
+    padding-right: 20px;
+    background-color: #529fdf;
+}
+.promo .verify 
+{
+    background-image: url('https://i.pinimg.com/736x/97/57/64/9757640e0185f00b745a49af1314637f.jpg');
+    background-repeat: no-repeat;
+    height:400px;
+    text-align: center;
+    padding: 20px;
+}
+.promo .riaad
+{
+    background-color: white;
+    color:black;
+    width: 250px;
+    height: 150px;
+    padding: 30px;
+}
+
+.promo .image-container > p
+{
+    color:white;
+    font-weight: bolder;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.promo .choose-riaad .paragraph
+{
+    display:inline-flex;
+}
+.promo  a
+{
+    color: #d4a703; 
+    font-weight: bolder;
+}
+.blog .article
+{
+    background-image: url('https://files.slack.com/files-pri/T08BR1M9D6V-F08JD4B1XFB/news-02__1_.jpg');
+}
+.book
+{
+    grid-area: book;
+}
+.testimony
+{
+    grid-area: testimony;
+}
+.join
+{
+    grid-area: join;
+}
+.footer
+{
+    grid-area: footer;
+    background-color: rgb(66, 70, 75);
+
+}
