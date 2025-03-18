@@ -13,14 +13,17 @@
     "service service service service"
     "step step step step"
     "promo promo promo promo"
+    "photo photo photo photo"
     "book book book book"
     "testimony testimony testimony testimony"
+    "reviews reviews reviews reviews "
     "join join join join"
     "footer footer footer footer";
 }
 .main
 {
     grid-area: main;
+    margin-bottom: 100px;
 }
 header{
     background-color: rgb(66, 70, 75);
@@ -111,57 +114,91 @@ header a
 {
     grid-area: about;
     display: grid;
-    grid-template-columns: auto auto ;
+    grid-template-columns: 500px 500px ;
+    width:50%;
+    margin-left:300px;
 }
 .about .section
 {
     display:grid;
     grid-template-columns: auto auto;
+    width:500px;
+    margin-left: 30px;
+}
+.about .picture img
+{
+    width: 500px;
+    height:500px;
+}
+
+.about h1
+{
+    font-size: 50px;
+}
+.about a
+{
+    color: #f8c306;
+    font-size: 20px;
+    font-weight: bolder;
 }
 .logo
 { 
     grid-area: logo;
     display:flex;
-}
-.about h1
-{
-    font-size: 60px;
-}
-.about a
-{
-    color: #d4a703;
-    font-size: 20px;
-    font-weight: bolder;
+    text-align: center;
 }
 .heading
 {
     grid-area:heading;
     text-align: center;
+    padding: 50px;
+}
+.heading h1
+{
+    font-size: 50px;
 }
 .service
 {
     grid-area: service;
     display: grid;
-    grid-template-columns: repeat(4,100px);
+    grid-template-columns: repeat(4,300px);
     margin: auto;
-    width: 60%;
+    text-align: center;
+    height: 500px;
+}
+.service .storage
+{
+    background-color: #1598cc;
+    color: white;
 }
 .service i
 {
     font-size: 100px;
 }
+.service a
+{
+    text-decoration: none;
+}
 .step
 {
     grid-area: step;
     text-align: center;
+    margin: auto;
+    display:inline-flex;
+    width: 60%;
+    margin-top: 50px;
 }
-
+.step p
+{
+    margin-left: 2gi00px;
+}
 .promo
 {
     grid-area: promo;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 400px 400px;
     height:600px;
+    margin: auto;
 }
 .promo .image-container
 {
@@ -198,28 +235,249 @@ header a
 }
 .promo  a
 {
-    color: #d4a703; 
+    color: #f8c306; 
     font-weight: bolder;
 }
 .blog .article
 {
     background-image: url('https://files.slack.com/files-pri/T08BR1M9D6V-F08JD4B1XFB/news-02__1_.jpg');
 }
+.photo
+{
+    grid-area: photo;
+    height:400px;
+    background-image: url('Images/couple.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .book
 {
     grid-area: book;
+    display:grid;
+    grid-template-columns: auto auto ;
+}
+.book .request
+{
+    background-color:#f8c306 ;
+    padding-left:400px;
+    padding-top: 100px;
+    color:white;
+}
+.book .request h1
+{
+    font-size: 50px;
+}
+.book .form 
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color:#529fdf ;
+    padding: 50px;
+}
+.book button
+{
+    width: 150px;
+    height: 55px;
+    margin-top: 20px;
+    font-weight: bolder;
+    background-color:#f8c306;
+    color: white;
+    border:none;
+}
+.book .form label
+{
+    color: white;
+    font-weight: bolder;
+}
+.book sup
+{
+    color: red;
 }
 .testimony
 {
     grid-area: testimony;
+    text-align: center;
+    padding: 80px;
+}
+.testimony h1
+{
+    font-size: 50px;
+}
+.reviews
+{
+    grid-area: reviews;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-gap:100px;
+    margin-bottom: 100px;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+}
+.reviews span
+{
+    font-size: 60px;
+    color:white;
+    background-color: #1598cc;
+    border-radius: 200%;
+}
+.reviews .christine
+{
+    color: #f8c306;
+    font-weight: bolder;
 }
 .join
 {
     grid-area: join;
+    text-align: center;
+}
+.join .blog
+{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 350px;
+    grid-gap: 50px;
+    color: white;
+    font-size: 18px;
+    text-align: start;
+    margin-left: 20%;
+}
+.join h1
+{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+.join a
+{
+    color: #f8c306 ;
+    font-weight: bolder;
+}
+.join button
+{
+    background-color: #f8c306;
+    width: 200px;
+    padding:25px;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    margin-bottom: 100px;
+    margin-left: 100px;
+}
+.join .blog .article-1
+{
+    background-image: url("Images/article1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 120px;
+    padding-left: 30px;
+    margin-bottom: 50px;
+}
+.join .blog .article-2
+{
+    background-image: url('https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F71zTfatZYPL.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 120px;
+    padding-left: 30px;
+    margin-bottom: 50px;
+}
+.join .blog .article-3
+{
+    background-image: url("Images/article3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 120px;
+    padding-left: 30px;
+    margin-bottom: 50px;
+}
+.join .blog  p
+{
+    color:rgb(84, 9, 99);
+    font-weight: bolder;
 }
 .footer
 {
     grid-area: footer;
-    background-color: rgb(66, 70, 75);
+    display: grid;
+    grid-template-rows: auto auto;
+}
+.footer .discover
+{
+    background-color: #e2b205;
+    display: inline-flex;
+    padding: 100px;
+    color: white;
 
+}
+.footer .discover button
+{
+    padding: 25px;
+    width: 200px;
+    background-color: rgb(66, 70, 75);
+    border: none;
+    margin-left: 50%;
+}
+.footer .discover a
+{
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+
+}
+.footer h1 
+{
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+.footer .footer-link
+{
+    background-color: rgb(66, 70, 75);
+    display: inline-flex;
+    padding: 100px;
+}
+.footer ul
+{
+    list-style-type: none;
+    margin-left: 200px;
+    color: white;
+}
+.footer .copyright
+{
+    background-color: rgb(66, 70, 75);
+    padding: 30px; 
+    text-align: center;
+    color: white;
+}
+.footer .copyright p
+{
+    margin: 30px;
+}
+.footer .social
+{
+    display:inline-flex;
+}
+.footer .social i
+{
+    font-size: 20px;
+    margin:10px;
+}
+
+hr
+{
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+input
+{
+    padding:20px;
+    width:200px;
+    font-weight: bold;
+    border: none;
+}
+a
+{
+    color:#f8c306;
+    font-weight: bolder;
 }
