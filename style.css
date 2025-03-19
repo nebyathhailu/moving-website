@@ -86,7 +86,7 @@ header a
 {
     color:#f8c306;
 }
-.moving
+.main .moving
 {
     background-image:url('https://res.cloudinary.com/growing-fathers/image/upload/w_1300,h_684,q_auto,f_auto,c_lfill/v1/blog/leading-your-family-through-a-move?_a=BAMCkGeA0');
     background-repeat: no-repeat;
@@ -96,12 +96,17 @@ header a
     text-align: center;
     padding:200px;
 }
-.moving h1
+.main .moving h1
 {
     font-size: 100px;
     font-weight: bolder;
 }
-.moving > button
+.main .moving p
+{
+    color:black;
+    font-weight: bolder;
+}
+.main .moving > button
 {
     padding: 20px 40px ;
     background-color: #f8c306;
@@ -114,16 +119,21 @@ header a
 {
     grid-area: about;
     display: grid;
-    grid-template-columns: 500px 500px ;
-    width:50%;
-    margin-left:300px;
+    grid-template-columns: auto auto;
+    text-align: center;
 }
 .about .section
 {
     display:grid;
     grid-template-columns: auto auto;
-    width:500px;
-    margin-left: 30px;
+    width:800px;
+    padding-left: 200px;
+    padding-top: 100px;
+}
+.about .section div
+{
+    margin-right: 100px;
+    margin-left: 100px;
 }
 .about .picture img
 {
@@ -146,6 +156,7 @@ header a
     grid-area: logo;
     display:flex;
     text-align: center;
+    margin: 100px;
 }
 .heading
 {
@@ -185,25 +196,50 @@ header a
     text-align: center;
     margin: auto;
     display:inline-flex;
-    width: 60%;
+    width: 80%;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 .step p
 {
     margin-left: 200px;
+    margin-top: 30px;
+    font-weight: bolder;
+    text-align: start;
+}
+.step h1
+{
+    font-size: 40px;
+    text-align: start;
+    margin-left: 30px;
+}
+.step div
+{
+    background-image: url("Images/article3.jpg");
+    text-align: center;
+    width:200px;
+    height: 100px;
+    margin-left: 20px;
+}
+.step i
+{
+    font-size: 50px;
+    margin-top: 30px;
 }
 .promo
 {
     grid-area: promo;
     display: grid;
-    grid-template-columns: 400px 400px;
-    height:600px;
+    grid-template-columns: auto auto;
+    height:700px;
     margin: auto;
 }
 .promo .image-container
 {
-    padding-right: 20px;
+    width:500px;
+    padding-right: 40px;
     background-color: #529fdf;
+    margin-right: 100px;
 }
 .promo .verify 
 {
@@ -229,14 +265,25 @@ header a
     margin-top: 40px;
     margin-left: 30px;
 }
+.promo .choose-riaad
+{
+    width: 500px;
+    /* padding-left:50px ; */
+}
 .promo .choose-riaad .paragraph
 {
     display:inline-flex;
-}
-.promo  a
-{
-    color: #f8c306; 
+    padding: 50px;
     font-weight: bolder;
+}
+.promo .contact
+{
+    padding-left: 500px;
+    padding-top: 40px;
+}
+.promo .choose-riaad i,h1
+{
+    font-size: 40px;
 }
 .blog .article
 {
@@ -245,10 +292,18 @@ header a
 .photo
 {
     grid-area: photo;
-    height:400px;
+    height:1000px;
     background-image: url('Images/couple.png');
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top:50px;
+    text-align: center;
+    font-size: 150px;
+    align-items: center;
+}
+.photo i
+{
+    margin-top: 450px;
 }
 .book
 {
@@ -415,7 +470,7 @@ header a
     width: 200px;
     background-color: rgb(66, 70, 75);
     border: none;
-    margin-left: 50%;
+    margin-left: 40%;
 }
 .footer .discover a
 {
